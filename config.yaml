@@ -1,0 +1,21 @@
+model:
+  vocab_size: 50257
+  max_T: 128
+  d_model: 512
+  n_heads: 8
+  d_ff: 4
+  n_layers: 6
+
+training:
+  batch_size: 32
+  learning_rate: 0.00001
+  total_steps: 5000
+  weight_decay: 0.01
+
+data:
+  dataset_path: "./data/"
+
+generation:
+  max_new_tokens: 100
+  temperature: 0.8
+  top_k: 40
